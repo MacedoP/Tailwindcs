@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -864,6 +864,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .w-\[200px\] {
@@ -1818,6 +1822,10 @@ video {
   border-width: 4px;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-\[2px\] {
   border-width: 2px;
 }
@@ -1912,6 +1920,16 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1920,6 +1938,11 @@ video {
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -2087,6 +2110,10 @@ video {
   padding: 10px;
 }
 
+.p-\[4px\] {
+  padding: 4px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2141,6 +2168,10 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-sans {
+  font-family: Roboto, sans-serif;
 }
 
 .text-2xl {
@@ -2260,6 +2291,10 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-brand {
+  color: #fccc;
 }
 
 .text-white {
@@ -2601,6 +2636,14 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-\[2s\] {
   transition-duration: 2s;
 }
@@ -2703,8 +2746,28 @@ video {
   }
 }
 
+.hover\:translate-y-2:hover {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-y-50:hover {
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-y-\[1\.1\]:hover {
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-\[\#fccc\]:hover {
   background-color: #fccc;
+}
+
+.hover\:bg-red-950:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
@@ -2729,6 +2792,11 @@ video {
   text-align: center;
 }
 
+.group:hover .group-hover\:text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:bg-purple-700 {
     --tw-bg-opacity: 1;
@@ -2742,11 +2810,6 @@ video {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-pink-700 {
-    --tw-text-opacity: 1;
-    color: rgb(190 24 93 / var(--tw-text-opacity));
   }
 
   .sm\:underline {
@@ -2768,11 +2831,6 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .md\:text-blue-800 {
-    --tw-text-opacity: 1;
-    color: rgb(30 64 175 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -2785,26 +2843,12 @@ video {
     text-align: left;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-\[50px\] {
-    font-size: 50px;
-  }
-
   .lg\:text-\[30px\] {
     font-size: 30px;
   }
 
-  .lg\:text-red-500 {
-    --tw-text-opacity: 1;
-    color: rgb(239 68 68 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-\[\] {
-    color: ;
+  .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.dark *) {
+    paint-order: markers;
   }
 }
 
@@ -2812,13 +2856,5 @@ video {
   .xl\:bg-purple-950 {
     --tw-bg-opacity: 1;
     background-color: rgb(59 7 100 / var(--tw-bg-opacity));
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  @media (min-width: 1024px) {
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
-      paint-order: markers;
-    }
   }
 }
