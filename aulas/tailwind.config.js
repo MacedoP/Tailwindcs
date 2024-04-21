@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./**/*{html,js}"],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
     extend: {
       colors:{
-        brand: '#fccc'
+        brand: {
+          100: '#c542f5',
+          200: '#9e35c4',
+          300: '#6d2487',
+          400: '#331040',
+        }
       },
       fontFamily:{
         sans: ['Roboto', 'sans-serif'],
