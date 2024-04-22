@@ -13,8 +13,8 @@ module.exports = {
         }
       },
       fontFamily:{
-        sans: ['Roboto', 'sans-serif'],
-        serif: ['Jersey 25','serif']
+        roboto: ['Roboto', 'sans-serif'],
+        jersey: ['Jersey 25','serif']
       },
       // backgroundImage:{
       //   banner: "url('/img/banner.jpg')"

@@ -15,6 +15,9 @@
 @tailwind components;
 @tailwind utilities;
 
+### Para se usar os componentes acima primeiro temo de executar o seguinte comando
+[npx tailwindcss -i 'directorio onde esta a teu css' -o ./dist/tailwind.css]
+
 
 * {
   "name": "aulas",
