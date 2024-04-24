@@ -13,9 +13,10 @@ module.exports = {
         }
       },
       fontFamily:{
-        roboto: ['Roboto', 'sans-serif'],
-        jersey: ['Jersey 25','serif']
-      },
+        "Open-san": ["Open Sans", "sans-serif"],
+        "Roboto": ["Roboto", "sans-serif"],
+        "Nunito": ["Nunito", "sans-serif"]
+      }
       // backgroundImage:{
       //   banner: "url('/img/banner.jpg')"
       // }
