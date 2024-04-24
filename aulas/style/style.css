@@ -6,3 +6,9 @@
 .text-shadow{
     text-shadow: 2px 1px 10px black;
 }
+
+@media (min-width: 576px) {
+    .xm\:container {
+      max-width: 576px;
+    }
+  }

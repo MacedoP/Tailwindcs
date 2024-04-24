@@ -11,38 +11,38 @@
 <body>
     <header class="container mx-auto p-4 flex justify-between items-center h-24">
         <div>
-            <h1 class="font-bold font-Roboto text-blue-main text-[30px]">Lumi Hotel</h1>
+            <h1 class="font-bold font-Roboto text-blue-main text-[30px]" id="titulo">Lumi Hotel</h1>
         </div>
 
         <nav class="flex justify-center items-center  transition duration-200">
             <ul class="flex justify-center items-center list-none transition duration-200">
-                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Open-san hover:text-gray-900">Reservar</a></li>
-                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Open-san hover:text-gray-900 ">Sobre nós</a></li>
-                <li class="ml-[10px]"><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Open-san hover:text-gray-900 ">Informacoes</a></li>
-                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Open-san hover:text-gray-900 ">Contato</a></li>
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900">Reservar</a></li>
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Sobre nós</a></li>
+                <li class="ml-[10px]"><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Informacoes</a></li>
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Baner-->
-    <section class=" w-screen h-[350px] bg-center bg-cover bg-no-repeat bg-bg-main flex justify-center items-center brightness-[85%]" style="background-image: url(./photo/bg-main.jpg);">
+    <section class=" w-screen h-[350px] bg-center bg-cover bg-no-repeat bg-bg-main flex justify-center items-center brightness-[85%]" id="bg-mudar" style="background-image: url(./photo/bg-main.jpg);">
         <div >
             <div class="text-center mb-5">
                 <h2 class="text-white font-bold text-[30px] font-Roboto">Onde voce quer ir?</h2>
                 <p class="text-white text-[18px] font-Open-san font-semibold">Escolha o estado e cidade para achar os melhores resorts.</p>
             </div>
 
-            <div class="flex justify-center items-center ml-4">
+            <div class="flex justify-center items-center ml-4  ">
                 <div class="ml-4">
-                    <select name="cidade" id="cidade" class="outline-none border-none p-2 rounded-md ml-4 ">
-                        <option value="escolha" selected>Escolha estado</option>
+                    <select name="estado" id="estado" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha estado</option>
                         <option value="nye">Szabolcs</option>
                         <option value="deb">debe-Debrecen</option>
                         <option value="misk">M-Miskolcs</option>
                         <option value="pésc">p_Pésc</option>
                     </select>
-                    <select name="cidade" id="cidade" class="outline-none border-none p-2 rounded-md ml-4 ">
-                        <option value="escolha" selected>Escolha cidade</option>
+                    <select name="cidade" id="cidade" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha cidade</option>
                         <option value="nye">Nyiregyza</option>
                         <option value="deb">Debrecen</option>
                         <option value="misk">Miskolcs</option>
@@ -50,8 +50,8 @@
                     </select>
                 </div>
                 <div class="ml-4">
-                    <button class="text-white bg-gray-300 p-2 rounded-md flex justify-center items-center text-center">
-                        <i class='bx bx-search-alt-2 flex justify-center items-center text-center '></i>  Escolha cidade
+                    <button class="text-white text-sm bg-orange-600 p-2 rounded-md flex justify-center items-center text-center font-Open-san cursor-pointer">
+                        <i class='bx bx-search-alt-2 flex justify-center items-center text-center mr-2'></i>Pesquisar resorts
                     </button>
                 </div>
             </div>
@@ -59,6 +59,38 @@
 
     </section>
     <!--Baner-->
+
+    <!--Painel Destque-->
+        <article class="flex justify-between items-center">
+            <div class="w-[50%]">
+                <h4>RESORT EM DESTAQUE</h4>
+                <h2>Ecoresort Praia Norena</h2>
+                <h6>Hotel qualidade 5 estrela </h6>
+                 <p>
+                    Eu gostaria de estar no Lumi Hotel à beira-mar,
+                    Bebendo até o sol se pôr,
+                    E lágrimas salgadas do mar
+                    Misturando-se com as minhas próprias.   
+
+                 </p>
+                 <p>
+                    Noite após noite,
+                    Em sonhos de hotel,
+                    As paredes se dobram e desdobram,
+                    E eu estou sempre chegando.
+                 </p>
+                 <button> Solicitar reserva  
+                    <i class='bx bx-right-arrow-alt'></i>
+                 </button>
+            </div>
+            <div class=" bg-center bg-cover bg-no-repeat " style="background-image: url(./photo/art-1.jpg); height: 250px; background-position: center bottom;">
+                <button><i class='bx bx-chevron-left'></i></button>
+                <button><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </article>
+    <!--Painel Destque-->
+
+    <script src="bg_mudar.js"></script>
 
     
 </body>
