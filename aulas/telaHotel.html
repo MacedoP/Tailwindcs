@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style/output.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="overflow-x-hidden">
-    <header class="container mx-auto p-4 flex justify-between items-center h-24">
+<body>
+    <header class="container mx-auto p-4 flex justify-between items-center h-22">
         <div>
             <h1 class="font-bold font-Roboto text-blue-main text-[30px]" id="titulo">Lumi Hotel</h1>
         </div>
@@ -66,7 +66,7 @@
                 <div class=" w-[50%] sm:mb-5 md:mb-5 lg:ml-[80px] xl:ml-[-7px] xl:p-4 ">
                     <h4 class="mb-5 font-Nunito font-semibold">RESORT EM DESTAQUE</h4>
                     <h2 class="mb-5">Ecoresort Praia Norena</h2>
-                    <h6 class="mb-5">Hotel qualidade<span class="text-[#C74B0A]"> 5 estrela</span> </h6>
+                    <h6 class="mb-5">Hotel qualidade<span class="text-[#C74B0A] text-[20px] font-Nunito"> 5 estrela</span> </h6>
                      <p class="mb-5 font-Open-san text-sm">
                         Eu gostaria de estar no Lumi Hotel à beira-mar,
                         Bebendo até o sol se pôr,
@@ -84,13 +84,33 @@
                      </button>
                 </div>
 
-                <div class="xl:p-4  bg-center bg-cover bg-no-repeat flex justify-between w-[200px] rounded-[10px] md:space-y-5 lg:mr-[-50px] xl:mr-[-7px] shadow-xl" style="background-image: url(./photo/camas.jpg); height: 300px; background-position: center bottom; width:100%; border-radius: 10px; margin-right:100pxpx;" id="imagem-exbir">
+                <div class="xl:p-4  bg-center bg-cover bg-no-repeat flex justify-between w-[200px] rounded-[10px] md:space-y-5 lg:mr-[-50px] xl:mr-[-7px] shadow-xl" style="background-image: url(./photo/camas.jpg); height: 350px; background-position: center bottom; width:100%; border-radius: 10px; margin-right:100pxpx;" id="imagem-exbir">
                     <button id="esquerdo" class="flex justify-center items-center"><i class='bx bx-chevron-left text-white text-[40px] hover:bg-[#ffffff62] rounded-[50%] mx-2'></i></button>
                     <button id="direito" class="flex justify-center items-center"><i class='bx bx-chevron-right text-white text-[40px] hover:bg-[#ffffff62] rounded-[50%] mx-2'></i></button>
                 </div>
             
         </article>
     <!--Painel Destque-->
+
+    <!--CONHEÇA MAIS-->
+    <div class="flex justify-center items-center bg-[#b5e2e462] p-4 mt-[-18px]">
+        <h1 class="font-semibold text-[20px]  underline">Conheça mais resorts</h1>
+    </div>
+    <section class="p-8 grid lg:grid-cols-4 xl:grid-cols-4 gap-6 sm:grid-cols-1 md:grid-cols-1">
+        <div class="grid col-span-2  row-span-2 bg-center bg-no-repeat bg-cover h-[450px] sm:bg-cover sm:bg-center sm:bg-no-repeat md:bg-cover md:bg-center md:bg-no-repeat p-4" style="background-image: url(./photo/r-1.jpg); border-radius: 10px;">
+            <span class="flex self-end">Ilha do Mussulo</span>
+        </div>
+
+        <div class="p-4  h-[232px] grid col-span-2  bg-center bg-cover bg-no-repeat sm:bg-cover sm:bg-center sm:bg-no-repeat" style="background-image: url(./photo/r-2.jpg);border-radius: 10px;">
+            <span class="flex self-end">Praia Amelha</span>
+        </div>
+
+        <div class="h-[200px] bg-center bg-cover bg-no-repeat p-4 grid sm:col-span-1 md:col-span-1 " style="background-image: url(./photo/r-3.jpg);border-radius: 10px;"><span class="flex self-end">Praia Norena</span></div>
+
+        <div class=" h-[200px] bg-center bg-cover bg-no-repeat p-4 grid sm:col-span-1 md:col-span-1 " style="background-image: url(./photo/r-4.jpg);border-radius: 10px;"><span class="flex self-end">Praia Traquilidade</span></div>
+
+    </section>
+     <!--CONHEÇA MAIS-->
 
     <script src="bg_mudar.js"></script>
 
