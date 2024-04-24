@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pagina</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="container mx-auto p-4 flex justify-between items-center h-22">
+        <div>
+            <h1 class="font-bold font-Roboto text-blue-main text-[30px]" id="titulo">Lumi Hotel</h1>
+        </div>
+
+        <nav class="flex justify-center items-center  transition duration-200">
+            <ul class="flex justify-center items-center list-none transition duration-200">
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900">Reservar</a></li>
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Sobre nós</a></li>
+                <li class="ml-[10px]"><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Informacoes</a></li>
+                <li class="ml-[10px] "><a href="#" class="hover:underline text-sm text-gray-600 font-sans font-Nunito font-bold hover:text-gray-900 ">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Baner-->
+    <section class=" sm:w-screen sm:mx-auto md:mx-auto w-screen h-[350px] bg-center bg-cover bg-no-repeat bg-bg-main flex justify-center items-center brightness-[85%]" id="bg-mudar" style="background-image: url(./photo/bg-main.jpg);">
+        <div >
+            <div class="text-center mb-5">
+                <h2 class="text-white font-bold text-[30px] font-Roboto">Onde voce quer ir?</h2>
+                <p class="text-white text-[18px] font-Open-san font-semibold">Escolha o estado e cidade para achar os melhores resorts.</p>
+            </div>
+
+            <div class="flex justify-center items-center  sm:m-auto md:m-auto sm:justify-center md:justify-center">
+                <div>
+                    <select name="estado" id="estado" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha estado</option>
+                        <option value="nye">Szabolcs</option>
+                        <option value="deb">debe-Debrecen</option>
+                        <option value="misk">M-Miskolcs</option>
+                        <option value="pésc">p_Pésc</option>
+                    </select>
+                    <select name="cidade" id="cidade" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha cidade</option>
+                        <option value="nye">Nyiregyza</option>
+                        <option value="deb">Debrecen</option>
+                        <option value="misk">Miskolcs</option>
+                        <option value="pésc">Pésc</option>
+                    </select>
+                </div>
+                <div class="ml-4">
+                    <button class="text-white text-sm bg-orange-600 p-2 rounded-md flex justify-center items-center text-center font-Open-san cursor-pointer">
+                        <i class='bx bx-search-alt-2 flex justify-center items-center text-center mr-2'></i>Pesquisar resorts
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Baner-->
+
+    <!--Painel Destque-->
+        <article class="p-10 grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1">
+            
+                <div class=" w-[50%] sm:mb-5 md:mb-5 lg:ml-[80px] xl:ml-[-7px] xl:p-4 ">
+                    <h4 class="mb-5 font-Nunito font-semibold">RESORT EM DESTAQUE</h4>
+                    <h2 class="mb-5">Ecoresort Praia Norena</h2>
+                    <h6 class="mb-5">Hotel qualidade<span class="text-[#C74B0A] text-[20px] font-Nunito"> 5 estrela</span> </h6>
+                     <p class="mb-5 font-Open-san text-sm">
+                        Eu gostaria de estar no Lumi Hotel à beira-mar,
+                        Bebendo até o sol se pôr,
+                        E lágrimas salgadas do mar
+                        Misturando-se com as minhas próprias.
+                     </p>
+                     <p class="mb-5 font-Open-san text-sm">
+                        Noite após noite,
+                        Em sonhos de hotel,
+                        As paredes se dobram e desdobram,
+                        E eu estou sempre chegando.
+                     </p>
+                     <button class="sm:mb-5 md:mb-5 mb-5 mt-5 bg-[#C74B0A] p-2 rounded-md text-center text-white text-sm flex justify-center items-center" > Solicitar reserva
+                        <i class='bx bx-right-arrow-alt text-[16px] text-center inline-block justify-center items-center'></i>
+                     </button>
+                </div>
+
+                <div class="xl:p-4  bg-center bg-cover bg-no-repeat flex justify-between w-[200px] rounded-[10px] md:space-y-5 lg:mr-[-50px] xl:mr-[-7px] shadow-xl" style="background-image: url(./photo/camas.jpg); height: 350px; background-position: center bottom; width:100%; border-radius: 10px; margin-right:100pxpx;" id="imagem-exbir">
+                    <button id="esquerdo" class="flex justify-center items-center"><i class='bx bx-chevron-left text-white text-[40px] hover:bg-[#ffffff62] rounded-[50%] mx-2'></i></button>
+                    <button id="direito" class="flex justify-center items-center"><i class='bx bx-chevron-right text-white text-[40px] hover:bg-[#ffffff62] rounded-[50%] mx-2'></i></button>
+                </div>
+            
+        </article>
+    <!--Painel Destque-->
+
+    <!--CONHEÇA MAIS-->
+    <div class="flex justify-center items-center bg-[#b5e2e462] p-4 mt-[-18px]">
+        <h1 class="font-semibold text-[20px]  underline text-gray-400">Conheça mais resorts</h1>
+    </div>
+    <section class="p-10 grid lg:grid-cols-4 xl:grid-cols-4 gap-6 sm:grid-cols-1 md:grid-cols-1">
+        <div class="grid col-span-2  row-span-2 bg-center bg-no-repeat bg-cover h-[450px] sm:bg-cover sm:bg-center sm:bg-no-repeat md:bg-cover md:bg-center md:bg-no-repeat p-4 hover:scale-[1.1] hover:cursor-pointer transition duration-500" style="background-image: url(./photo/r-1.jpg); border-radius: 10px;">
+            <span class="flex self-end text-white font-bold text-shadow text-[18px]">Ilha do Mussulo</span>
+        </div>
+
+        <div class="p-4  h-[232px] grid col-span-2  bg-center bg-cover bg-no-repeat sm:bg-cover sm:bg-center sm:bg-no-repeat hover:scale-[1.1] hover:cursor-pointer transition duration-500" style="background-image: url(./photo/r-2.jpg);border-radius: 10px;">
+            <span class="flex self-end text-white font-bold text-shadow text-[18px]">Praia Amelha</span>
+        </div>
+
+        <div class="h-[200px] bg-center bg-cover bg-no-repeat p-4 grid sm:col-span-1 md:col-span-1 hover:scale-[1.1] hover:cursor-pointer transition duration-500" style="background-image: url(./photo/r-3.jpg);border-radius: 10px;"><span class="flex self-end text-white font-bold text-shadow text-[18px]">Praia Norena</span></div>
+
+        <div class=" h-[200px] bg-center bg-cover bg-no-repeat p-4 grid sm:col-span-1 md:col-span-1 hover:scale-[1.1] hover:cursor-pointer transition duration-500" style="background-image: url(./photo/r-4.jpg);border-radius: 10px;"><span class="flex self-end text-white font-bold text-shadow text-[18px]">Praia Traquilidade</span></div>
+
+    </section>
+     <!--CONHEÇA MAIS-->
+     <hr>
+     <section class=" sm:w-screen sm:mx-auto md:mx-auto w-screen h-[350px] bg-center bg-cover bg-no-repeat bg-bg-main flex justify-center items-center bg-[#bce2e462]">
+        <div >
+
+            <div class="flex justify-center items-center  sm:m-auto md:m-auto sm:justify-center md:justify-center">
+                <div>
+                    <select name="estado" id="estado" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha estado</option>
+                        <option value="nye">Szabolcs</option>
+                        <option value="deb">debe-Debrecen</option>
+                        <option value="misk">M-Miskolcs</option>
+                        <option value="pésc">p_Pésc</option>
+                    </select>
+                    <select name="cidade" id="cidade" class="cursor-pointer outline-none border-none p-2 rounded-md ml-4 bg-[#A9A9A7] font-Nunito shadow-md text-sm">
+                        <option value="escolha" selected class="text-gray-500">Escolha cidade</option>
+                        <option value="nye">Nyiregyza</option>
+                        <option value="deb">Debrecen</option>
+                        <option value="misk">Miskolcs</option>
+                        <option value="pésc">Pésc</option>
+                    </select>
+                </div>
+                <div class="ml-4">
+                    <button class="text-white text-sm bg-orange-600 p-2 rounded-md flex justify-center items-center text-center font-Open-san cursor-pointer">
+                        <i class='bx bx-search-alt-2 flex justify-center items-center text-center mr-2'></i>Pesquisar resorts
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <!--Footer-->
+     <hr>
+     <footer class="container mx-auto p-4 flex justify-between items-center h-22 p-4">
+        <div>
+            <h1 class="font-bold font-Roboto text-blue-main text-[30px]" id="titulo">Lumi Hotel🌟🌟🌟🌟🌟 </h1>
+        </div>
+     </footer>
+     <p class="font-bold text-center p-10 underline">
+        Site feito by Francisco Macedo
+     </p>
+
+    <script src="bg_mudar.js"></script>
+
+    
+</body>
+</html>

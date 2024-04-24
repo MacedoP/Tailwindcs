@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorpdown</title>
+    <link rel="stylesheet" href="./style/output.css">
+</head>
+<body class="bg-gray-300">
+    <main class="container mx-auto px-4 space-y-8">
+        <div>
+            <h6>Componente DropDown</h6>
+        </div>
+        <div class="relative ">
+            <button id="btn-open-menu" class="flex items-center justify-center bg-gray-200 border-gray border-solid focus:border p-2 rounded-md ml-3 drop-shadow-md w-[100px] mb-1">
+                Botao
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-4 h-4 text-black font-bold ml-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  
+                </button>
+                <div id="link-list" class="absolute hidden ml-3 w-[200px] bg-white border-solid border-gray-300  py-1 shadow-md rounded-md">
+                  <a href="#" class="block w-full text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-200">Link1</a>
+                  <a href="#" class="block w-full text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-200">Link2</a>
+                  <a href="#" class="block w-full text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-200">Link3</a>
+                  <a href="#" class="block w-full text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-200">Link4</a>
+                  <a href="#" class="block w-full text-sm text-gray-500 px-3 py-1 bg-white hover:bg-gray-200">Link5</a>
+                </div>
+        </div>
+
+    </main>
+
+    <script>
+        const btn = document.querySelector("#btn-open-menu")
+        const linkList = document.querySelector("#link-list")
+
+        btn.addEventListener('click',(evt)=>{
+            if(linkList.style.display = "block"){
+                linkList.style.display = "none"
+            }else{
+                linkList.style.display = "block";
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

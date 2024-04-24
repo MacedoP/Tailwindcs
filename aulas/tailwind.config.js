@@ -5,16 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        brand: {
-          100: '#c542f5',
-          200: '#9e35c4',
-          300: '#6d2487',
-          400: '#331040',
-        }
+        'blue-main': '#4DABBF',
       },
       fontFamily:{
-        sans: ['Roboto', 'sans-serif'],
-        serif: ['Jersey 25','serif']
+        "Open-san": ["Open Sans", "sans-serif"],
+        "Roboto": ["Roboto", "sans-serif"],
+        "Nunito": ["Nunito", "sans-serif"]
       },
       // backgroundImage:{
       //   banner: "url('/img/banner.jpg')"
